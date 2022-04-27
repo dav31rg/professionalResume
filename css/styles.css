@@ -19,21 +19,24 @@ html {
 /* main */
 /* Section HOME */
   .home {
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
-    flex-direction: column ;
-    align-items: center;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* Profile photo */
   .home-image-container img {
-    width: 350px;
+    width: 340px;
+    margin: 30px;
   }
 
   /* Personal Information */
   .home-information-container {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,18 +146,22 @@ html {
 /* Section About */
   .about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
   }
   .about img {
-    width: 350px;
-    margin: 120px auto 30px auto;
+    width: 340px;
+    margin: 20px 30px 0px 30px;
   }
   .about-information-container {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center; 
+    margin-top: 30px;   
   }
   .about-information-container .about--title {
     font-size: 4.2rem;
@@ -170,24 +177,31 @@ html {
     text-align: justify;
   }
   .about-information-container .about--list {
-    font-size: 2rem;
+    width: 300px;
+    font-size: 1.8rem;
     font-weight: 200;
     margin-top: 30px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     list-style: none;
+    justify-content: center;
     color: var(--warm-white);
   }
   .about-information-container .about--list li {
     border: solid var(--red);
     padding: 5px;
     border-radius: 10px;
-    margin-right: 18px;
-    margin-bottom: 15px;
+    margin: 15px 10px 15px 10px;
   }
   .about-information-container .about--link {
-
+    width: 120px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: solid var(--red);
+    border-radius: 20px;
+    background-color: var(--red);
   }
