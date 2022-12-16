@@ -6,41 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Davel R. Gobea</title>
 
-    <!-- Fonts:
-    DM Sans => Regular 400; Medium 500; Bold 700;
-    Roboto => Medium 500; -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/desktop.css">
   </head>
+
   <body>
-    <header>
-      <p>HEADER</p>
+    <header class="header">
+      <div class="hero">
+        <ul class="menu-pc">
+          <li><a class="lower-font-bold" href="#">Home</a></li>
+          <li><a class="lower-font-bold" href="#">About</a></li>
+          <li><a class="lower-font-bold" href="#">Skills</a></li>
+          <li><a class="lower-font-bold" href="#">Experiences</a></li>
+          <li><a class="lower-font-bold" href="#">Portfolio</a></li>
+          <li><a class="lower-font-bold" href="#">Blog</a></li>
+          <li><a class="lower-font-bold" href="#">Contact</a></li>
+        </ul>
+       
+      <img class="menu-img" src="/images/icons/bars-solid.svg" alt="menu icon" onclick="showMenu()">
+      <ul class="menu-mobile">
+        <li><a class="normal-font" href="#">Home</a></li>
+        <li><a class="normal-font" href="#">About</a></li>
+        <li><a class="normal-font" href="#">Skills</a></li>
+        <li><a class="normal-font" href="#">Experiences</a></li>
+        <li><a class="normal-font" href="#">Portfolio</a></li>
+        <li><a class="normal-font" href="#">Blog</a></li>
+        <li><a class="normal-font" href="#">Contact</a></li>
+      </ul>
+    </div>
     </header>
 
     <main>
       <!-- Home Section -->
       <section class="section-global">
-        <div class="container-global">
-          <div class="box-global">
-            <div class="home__img">
-              <img src="" alt="my profile picture" />
-            </div>
-          </div>
-
-          <div class="box-global">
+        <div class="container-home">
+          <div class="home-info box-global">
             <div class="home__iam">
-              <h3>Hello I'm</h3>
+              <h3 class="lower-font-bold-white">Hello I'm</h3>
             </div>
             <div class="home__name">
-              <h1>Davel R. Gobea</h1>
-              <h2>FullStack Developer</h2>
+              <h1 class="bigger-font">Davel R. Gobea</h1>
+              <h2 class="normal-font">FullStack Developer</h2>
             </div>
             <ul class="home__list">
               <li>davel.reymundo@gmail.com</li>
@@ -48,17 +60,24 @@
               <li>Arequipa - Peru</li>
             </ul>
           </div>
+
+          <div class="home-img box-global">
+            <div class="home__img">
+              <img src="/images/imgs/prueba03.png" alt="my profile picture" />
+            </div>
+          </div>
+
         </div>
       </section>
 
       <!-- About Section -->
       <section class="section-global">
         <div class="container-global">
-          <div class="box-global">
-            <img src="" alt="meboo coding on pc" />
+          <div class=" container-about box-global">
+            <img src="/images/imgs/prueba2.svg" alt="meboo coding on pc" />
           </div>
           <div class="box-global">
-            <h2>About Me</h2>
+            <h2 class="normal-font">About Me</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
               consequuntur aut ab odit reiciendis itaque.
@@ -76,7 +95,7 @@
 
       <!-- Blog Section -->
       <section class="section-global">
-          <h2>Blog</h2>
+          <h2 class="normal-font">Blog</h2>
           <div class="blog-container">
             <div class="box-global">Article 01</div>
             <div class="box-global">Article 02</div>
@@ -87,5 +106,6 @@
           </div>
       </section>
     </main>
+    <script src="/script.js"></script>
   </body>
 </html>
