@@ -2,6 +2,7 @@
 :root {
     --orange: #FF7517;
     --gray: #3E3939;
+    --m-gray: #646060;
     --x-gray: #8b8888;
     --s-gray: #D8D7D7;
     --l-gray: #EBEBEB;
@@ -28,8 +29,8 @@ html {
 }
 
 .normal-font {
-    font-size: 2.5rem;
-    color: var(--gray);
+    font-size: 2.8rem;
+    color: var(--m-gray);
 }
 
 .lower-font {
