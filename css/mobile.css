@@ -24,12 +24,12 @@ flex-direction: row-reverse;
     }
     
     .normal-font {
-        font-size: 2.5rem;
-        color: var(--gray);
+        font-size: 2.3rem;
+        color: var(--m-gray);
     }
     
     .lower-font {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         color: var(--gray);
     }
     
@@ -70,6 +70,7 @@ flex-direction: row-reverse;
         width: calc(520 / 16 * 1rem);
         height: calc(520 / 16 * 1rem);
         border-radius: 50%;
+        margin-bottom: 25px;
         background-color: var(--l-gray);
     }
 
