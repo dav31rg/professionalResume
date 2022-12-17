@@ -96,6 +96,10 @@
   }
 
   /* About Section */
+  .about-img-container {
+    margin-bottom: 35px;
+  }
+
   .about__img {
     width: calc(460 / 16 * 1rem);
     margin: 0 auto;
