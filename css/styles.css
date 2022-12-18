@@ -150,11 +150,49 @@
   cursor: pointer;
 }
 
-
-
+/* Portfolio Section */
+/* .box-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+} */
 
 .container-portfolio {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.portfolio__calencli {
+  /* position: relative;
+  min-height:;
+  border-radius: 15px;
+  background-color: var(--orange); */
+  
+  border: 1px solid var(--gray);
+}
+
+.prueba-relative {
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--orange);
+
+}
+
+.prueba {
+  position: absolute;
+  z-index: 5;
+}
+
+.calencli__img {  
+  position: absolute;
+  z-index: 10;
+  width: calc(560 / 16 * 1rem);
+  border-radius: 15px;
+}
+
+.calencli__img:hover {
+  opacity: 0.2;
 }
