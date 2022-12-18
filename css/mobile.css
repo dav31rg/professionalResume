@@ -82,6 +82,12 @@
     border: 20px solid var(--s-gray);
   }
 
+  .home__link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+
   .menu-pc {
     display: none;
   }

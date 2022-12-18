@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
-  /* border: 1px solid var(--gray); */
+  border: 1px solid var(--gray);
 }
 
 .container-global {
@@ -82,12 +82,17 @@
   margin-right: 14px;
 }
 
+.home__link {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
 .link__svg svg {
   width: 40px;
   height: 40px;
   padding: 5px;
   border-radius: 7px;
-  margin-right: 30px;
   fill: var(--gray);
 }
 .link__svg svg:hover {
@@ -143,4 +148,13 @@
 
 .info__item--cv:hover {
   cursor: pointer;
+}
+
+
+
+
+.container-portfolio {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
