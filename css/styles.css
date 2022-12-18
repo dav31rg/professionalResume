@@ -162,37 +162,43 @@
 .container-portfolio {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 30px 10% 10px 10%;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+
+.portfolio__item {
+  height: calc(560 / 16 * 1rem);
+  border-radius: 15px;  
+  border: 1px solid var(--gray);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio__calencli {
-  /* position: relative;
-  min-height:;
-  border-radius: 15px;
-  background-color: var(--orange); */
-  
-  border: 1px solid var(--gray);
+  background-image: url(/images/imgs/calenCli.svg);
 }
 
-.prueba-relative {
-  position: relative;
+.porfolio__pkmon {
+  background-image: url(/images/imgs/pkmon-ruby.svg) ;
+}
+
+.calencli__info {
+
+  height: 100%;
+  padding-top: 30%;
   border-radius: 15px;
+  text-align: center;
   background-color: var(--orange);
-
+  opacity: 0;
+  transition: 0.3s;
 }
 
-.prueba {
-  position: absolute;
-  z-index: 5;
+.calencli__info:hover {
+  opacity: 0.9;
 }
 
-.calencli__img {  
-  position: absolute;
-  z-index: 10;
-  width: calc(560 / 16 * 1rem);
-  border-radius: 15px;
-}
+.icon {
 
-.calencli__img:hover {
-  opacity: 0.2;
 }
