@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
-  border: 1px solid var(--gray);
+  /* border: 1px solid var(--gray); */
 }
 
 .container-global {
@@ -111,7 +111,7 @@
 }
 
 .about__info {
-  padding: 10px;
+  padding: 35px;
 }
 
 .about__info--p {
@@ -151,14 +151,6 @@
 }
 
 /* Portfolio Section */
-/* .box-portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-} */
-
 .container-portfolio {
   display: grid;
   justify-content: center;
@@ -167,25 +159,36 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+.section-global h2 {
+  text-align: center;
+}
 
 .portfolio__item {
   height: calc(560 / 16 * 1rem);
   border-radius: 15px;  
-  border: 1px solid var(--gray);
+  /* border: 1px solid var(--gray); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
 }
 
 .portfolio__calencli {
   background-image: url(/images/imgs/calenCli.svg);
 }
 
-.porfolio__pkmon {
-  background-image: url(/images/imgs/pkmon-ruby.svg) ;
+.portfolio__pkmon {
+  background-image: url(/images/imgs/map.png);
 }
 
-.calencli__info {
+.portfolio__clinBoards {
+  background-image: url(/images/imgs/clin-boards.png);
+}
 
+.portfolio__clivia {
+  background-image: url(/images/imgs/trivia.svg);
+}
+
+.portfolio__info {
   height: 100%;
   padding-top: 30%;
   border-radius: 15px;
@@ -195,10 +198,6 @@
   transition: 0.3s;
 }
 
-.calencli__info:hover {
+.portfolio__info:hover {
   opacity: 0.9;
-}
-
-.icon {
-
 }
