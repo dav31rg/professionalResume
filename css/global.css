@@ -58,6 +58,7 @@ html {
 /* Header Section */
 .header {
   margin: 30px 30px 130px 30px;
+  position: relative;
 }
 
 /* Home Section */

@@ -4,22 +4,44 @@
   justify-content: flex-end;
   align-items: center;
   max-width: 1024px;
-  height: 30px;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 .menu-pc {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 16%;
+  margin: 0 0 3rem 3rem;
+  padding: 0 18rem 1rem 0;
+  background-color: var(--white);
   display: flex;
-  gap: 40px;
+  justify-content: right;
+  align-items: center;
   list-style: none;
+}
+
+.menu-pc.scrolled {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); /* Aplica la sombra */
 }
 
 .menu-pc a {
   text-decoration: none;
+  margin-left: 3rem;
 }
 
 .menu-pc a:hover {
   color: var(--orange);
+  transition: 0.4s;
+}
+
+.menu-pc a:active {
+  text-decoration: underline;
+}
+
+.menu-pc a::after {
+  text-decoration: underline;
 }
 
 .menu-img {
