@@ -78,3 +78,7 @@ html {
   background-color: var(--orange);
   color: var(--white);
 }
+
+.scroll-margin {
+  scroll-margin-top: 100px;
+}
