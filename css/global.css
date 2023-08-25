@@ -55,6 +55,12 @@ html {
   color: var(--white);
 }
 
+.lowest-font-bold {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray);
+}
+
 /* Header Section */
 .header {
   margin: 30px 30px 130px 30px;
@@ -79,6 +85,59 @@ html {
   color: var(--white);
 }
 
+.grid2 {
+  display: grid;
+  gap: 1.8rem;
+  justify-items: center;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
 .scroll-margin {
   scroll-margin-top: 100px;
+}
+
+.progress-bar {
+  width: 90%;
+  height: 0.6rem;
+  background-color: var(--x-gray);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  margin-left: 1.2rem;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: var(--orange);
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.align-text-left  {
+  text-align: left;
+}
+
+.title-margin {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+svg {
+  width: 130px;
+  height: 130px;
+}
+
+svg circle {
+  fill: none;
+  stroke: var(--x-gray);
+  stroke-width: 0.6rem;
+  stroke-dasharray: 100 100;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+}
+
+svg circle:nth-child(2) {
+  stroke: var(--orange);
+  stroke-dasharray: var(--percentage) 100;
 }

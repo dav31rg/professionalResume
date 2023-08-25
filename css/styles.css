@@ -51,6 +51,17 @@
   /* border: 1px solid var(--gray); */
 }
 
+.box-global-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.box-global-right {
+  display: flex;
+  align-items: center;
+}
+
 .container-global {
   display: grid;
   justify-content: center;
@@ -216,4 +227,23 @@
 
 .portfolio__info:hover {
   opacity: 0.9;
+}
+
+.description-skill {
+  position: relative;
+}
+
+.description-skill span {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-global-left p {
+  margin-left: 1.2rem;
 }
