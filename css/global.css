@@ -38,6 +38,11 @@ html {
   color: var(--gray);
 }
 
+.lower-font-color {
+  font-size: 1.7rem;
+  color: var(--orange);
+}
+
 .lower-font-bold {
   font-size: 1.7rem;
   font-weight: bold;
@@ -55,10 +60,28 @@ html {
   color: var(--white);
 }
 
+.lowest-font-light {
+  font-size: 1.2rem;
+  color: var(--x-gray);
+}  
+
+
 .lowest-font-bold {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--gray);
+}  
+
+.lowest-font-bold-light {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--x-gray);
+}  
+
+.lowest-font-bold-color {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--orange);
 }
 
 /* Header Section */
@@ -123,6 +146,11 @@ html {
   margin-bottom: 4rem;
 }
 
+.title-box-margin {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
 svg {
   width: 130px;
   height: 130px;
@@ -140,4 +168,16 @@ svg circle {
 svg circle:nth-child(2) {
   stroke: var(--orange);
   stroke-dasharray: var(--percentage) 100;
+}
+
+.card {
+  padding: 1rem;
+  max-width: 350px;
+  height: 220px;
+  width: 95%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
+}
+
+.link {
+  text-decoration: none;
 }
