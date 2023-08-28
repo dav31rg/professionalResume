@@ -22,6 +22,6 @@ Welcome to my online portfolio! Here, you'll find a selection of my projects and
 
 ## Contact
 
-I'm excited to share my work with you! If you have any questions, comments, or collaboration, feel free to reach out to me at [inbox email](mailto:davel.reymundo@gmail.com).
+I'm excited to share my work with you! If you have any questions, comments, or collaboration, feel free to reach out to me [here](mailto:davel.reymundo@gmail.com).
 
 Thanks for visiting my portfolio!
