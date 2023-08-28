@@ -200,15 +200,24 @@
 }
 
 .portfolio__calencli {
-  background-image: url(/images/imgs/calenCli.svg);
+  background-image: url(/images/imgs/eatable.jpg);
+  background-size: 70% 60%;
+  background-position: 50%;
+  background-color: var(--s-gray);
 }
 
 .portfolio__pkmon {
-  background-image: url(/images/imgs/map.png);
+  background-image: url(/images/imgs/tweetable.jpg);
+  background-size: 70% 60%;
+  background-position: 50%;
+  background-color: var(--x-gray);
 }
 
 .portfolio__clinBoards {
   background-image: url(/images/imgs/clin-boards.png);
+  background-size: 70% 60%;
+  background-position: 50%;
+  background-color: var(--l-gray);
 }
 
 .portfolio__clivia {

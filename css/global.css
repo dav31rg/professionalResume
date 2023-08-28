@@ -60,6 +60,11 @@ html {
   color: var(--white);
 }
 
+.lowest-font-white {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
 .lowest-font-light {
   font-size: 1.2rem;
   color: var(--x-gray);
@@ -173,7 +178,7 @@ svg circle:nth-child(2) {
 .card {
   padding: 1rem;
   max-width: 350px;
-  height: 220px;
+  height: 230px;
   width: 95%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
 }
