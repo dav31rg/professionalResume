@@ -201,23 +201,23 @@
 
 .portfolio__calencli {
   background-image: url(/images/imgs/eatable.jpg);
-  background-size: 70% 60%;
+  background-size: contain;
   background-position: 50%;
-  background-color: var(--s-gray);
+  background-color: #d4d0cd;
 }
 
 .portfolio__pkmon {
   background-image: url(/images/imgs/tweetable.jpg);
-  background-size: 70% 60%;
+  background-size: contain;
   background-position: 50%;
-  background-color: var(--x-gray);
+  background-color: #dcdbdf;
 }
 
 .portfolio__clinBoards {
-  background-image: url(/images/imgs/clin-boards.png);
-  background-size: 70% 60%;
+  background-image: url(/images/imgs/clivia.jpg);
+  background-size: contain;
   background-position: 50%;
-  background-color: var(--l-gray);
+  background-color: #b8b4c2;
 }
 
 .portfolio__clivia {
@@ -235,7 +235,7 @@
 }
 
 .portfolio__info:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .description-skill {

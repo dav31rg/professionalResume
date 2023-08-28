@@ -14,3 +14,19 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+
+// formulario
+document.addEventListener("DOMContentLoaded", function() {
+  const personalForm = document.getElementById("myForm");
+
+  personalForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    setTimeout(function() {
+      cleanFields();
+    },1000);
+  });
+  
+  function cleanFields() {
+    personalForm.reset();
+  }
+});
