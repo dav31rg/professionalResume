@@ -15,6 +15,48 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const toggleButton = document.getElementById("toggleButton");
+const colorPalettes = document.querySelectorAll(".color-circle");
+const orangePallete = document.getElementById("orangeCircle");
+const pathsToChange = document.querySelectorAll("#path494, #path496, #path508, #path518, #path538")
+const popup =  document.getElementById("popup");
+
+function changePathColor(path,color) {
+  path.style.fill = color;
+}
+
+colorPalettes.forEach(palette => {
+  palette.addEventListener("click" ,() => {
+    const colorName = palette.classList[1];
+    const newColor = getComputedStyle(document.documentElement).getPropertyValue(`--${colorName}`);
+    document.documentElement.style.setProperty("--orange", newColor);
+    
+    pathsToChange.forEach(path => {
+      changePathColor(path, newColor);
+    });
+  });
+});
+
+orangePallete.addEventListener("click", () => {
+  document.documentElement.style.setProperty("--orange", "#ff7517");
+  pathsToChange.forEach(path => {
+    changePathColor(path, "#ff7517");
+  });
+});
+
+toggleButton.addEventListener("click", () => {
+  if (popup.classList.contains("hidden")) {
+    popup.classList.remove("hidden");
+    setTimeout(() => {
+      popup.classList.add("hidden");
+    }, 5000);
+  } else {
+    popup.classList.add("hidden");
+  }
+});
+
+
+
 // formulario
 document.addEventListener("DOMContentLoaded", function() {
   const personalForm = document.getElementById("myForm");
@@ -30,3 +72,5 @@ document.addEventListener("DOMContentLoaded", function() {
     personalForm.reset();
   }
 });
+
+
