@@ -47,9 +47,6 @@ orangePallete.addEventListener("click", () => {
 toggleButton.addEventListener("click", () => {
   if (popup.classList.contains("hidden")) {
     popup.classList.remove("hidden");
-    setTimeout(() => {
-      popup.classList.add("hidden");
-    }, 5000);
   } else {
     popup.classList.add("hidden");
   }
