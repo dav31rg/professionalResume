@@ -1,6 +1,9 @@
 /* Colors for project: */
 :root {
-  --orange: #ff7517;
+  --orange: #FA9E05;
+  --yellow: #FFDD00;
+  --purple: #A7095C;
+  --green: #4A772F;
   --gray: #3e3939;
   --m-gray: #646060;
   --x-gray: #8b8888;
@@ -157,8 +160,7 @@ html {
 }
 
 svg {
-  width: 130px;
-  height: 130px;
+  width: 100%;
 }
 
 svg circle {
@@ -230,4 +232,62 @@ button {
   font-size: 1.7rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.orange {
+  background-color: #ff7517;
+}
+.green {
+  background-color: var(--green);
+}
+.purple {
+  background-color: var(--purple);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+
+.popup {
+  position: fixed;
+  top: 205px;
+  left: 0px;
+  width: 60px;
+  padding: 20px;
+  background-color: var(--l-gray);
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.7s ease;
+  transform: translateX(0);
+  opacity: 0.7;
+}
+
+.popup.hidden {
+  transform: translateX(-100%);
+}
+
+.button-image {
+  position: fixed;
+  top: 170px;
+  left: 15px;
+  display: inline-block;
+  background-image: url("/images/icons/snowflake.png");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
