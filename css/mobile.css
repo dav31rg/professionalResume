@@ -5,9 +5,12 @@
 .menu-mobile {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
   list-style: none;
-  text-align: left;
-  display: none;
+  text-align: center;
+  visibility: hidden;
 }
 
 .menu-mobile a {
@@ -88,19 +91,6 @@
     width: 80%;
   }
 
-  /* .menu-pc {
-    display: none;
-  }
-
-  .menu-img {
-    height: 25px;
-    display: block;
-  } */
-
-  /* .menu-mobile--open {
-    display: block;
-  } */
-
   /* About Section */
   .about-img-container {
     margin-bottom: 35px;
@@ -113,16 +103,43 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    display: block;
+    height: 2.5rem;
+    margin: 0;
+  }
+  
   .menu-pc {
     display: none;
   }
 
+  .menu-icon {
+    padding-left: 90%;
+  }
   .menu-img {
-    height: 25px;
+    background-color: white;
+    position: fixed;
     display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
   }
 
   .menu-mobile--open {
-    display: block;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: max-content;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: white;
+    z-index: 100;
+  }
+  .menu-mobile--open li {
+    cursor: pointer;
   }
 }

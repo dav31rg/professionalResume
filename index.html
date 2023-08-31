@@ -32,20 +32,21 @@
           <li><a class="lower-font-bold" href="#portfolio">Portfolio</a></li>
           <li><a class="lower-font-bold" href="#contact">Contact</a></li>
         </ul>
-
-        <img
-          class="menu-img"
-          src="/images/icons/bars-solid.svg"
-          alt="menu icon"
-          onclick="showMenu()"
-        />
+        
+        <div class="menu-icon" onclick="showMenu()">
+          <img
+            class="menu-img"
+            src="/images/icons/bars-solid.svg"
+            alt="menu icon"
+          />
+        </div>
         <ul class="menu-mobile">
-          <li><a class="normal-font" href="#">Home</a></li>
-          <li><a class="normal-font" href="#about">About</a></li>
-          <li><a class="normal-font" href="#skills">Skills</a></li>
-          <li><a class="normal-font" href="#experience">Experience</a></li>
-          <li><a class="normal-font" href="#portfolio">Portfolio</a></li>
-          <li><a class="normal-font" href="#contact">Contact</a></li>
+          <li class="title-box-margin"><a class="normal-font" href="#" onclick="hideMenu()">Home</a></li>
+          <li class="title-box-margin"><a class="normal-font" href="#about" onclick="hideMenu()">About</a></li>
+          <li class="title-box-margin"><a class="normal-font" href="#skills" onclick="hideMenu()">Skills</a></li>
+          <li class="title-box-margin"><a class="normal-font" href="#experience" onclick="hideMenu()">Experience</a></li>
+          <li class="title-box-margin"><a class="normal-font" href="#portfolio" onclick="hideMenu()">Portfolio</a></li>
+          <li class="title-box-margin"><a class="normal-font" href="#contact" onclick="hideMenu()">Contact</a></li>
         </ul>
       </div>
     </header>

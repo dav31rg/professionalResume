@@ -1,8 +1,15 @@
 const header = document.querySelector(".menu-pc");
 let navBarMobile = document.querySelector(".menu-mobile");
+const menuIcon = document.querySelector(".menu-icon");
 
 function showMenu() {
-    navBarMobile.classList.toggle("menu-mobile--open");    
+  navBarMobile.classList.add("menu-mobile--open");    
+  menuIcon.style.display = "none";
+}
+
+function hideMenu() {
+  navBarMobile.classList.remove("menu-mobile--open");
+  menuIcon.style.display = "block";
 }
 
 
